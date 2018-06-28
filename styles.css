@@ -1,0 +1,60 @@
+body {
+    text-align: center;
+    background: rgb(94,94,255);
+
+}
+
+h1 {
+    font-family: Monoton;
+    font-size: 75px;
+    margin: 0.2em;
+    text-decoration: underline;
+     text-decoration-color: red;
+}
+
+h2 {
+    margin: 1em 0 0.25em;
+}
+
+h2:first-of-type {
+    margin-top: 0.5em;
+}
+table {
+    border: solid;
+    margin: 0 auto;
+    border-collapse: collapse;
+    cursor: pointer;
+}
+td {
+     border: 1px solid black;
+}
+
+input[type=number] {
+    width: 6em;
+}
+#colorSelection{
+    font-size: 15px;
+    font-weight: bold;
+    margin-top: 20px;
+
+}
+#sizePicker{
+    font-size: 15px;
+    font-weight: bold;
+    
+}
+#iSubmit{
+    cursor: pointer;
+}
+#slideEffect{
+    color: red;
+}
+#designSurrounding{
+    border: solid;
+    margin-top: 20px;
+   padding: 15px 15px 15px 15px;
+   border-radius: 5px;
+   border-color: rgb(192,192,192);
+   background: rgb(255,255,255);
+}
+
