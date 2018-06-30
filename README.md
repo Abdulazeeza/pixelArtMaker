@@ -15,4 +15,6 @@ For specific, detailed instructions, look at the project instructions in the [Ud
 
 This repository is the starter code for _all_ Udacity students. Therefore, we most likely will not accept pull requests.
 
-After building the pixel art maker given by Udacity, here is the link to the hosted webpage on github : https://github.com/Abdulazeeza/Abdulazeeza.github.io
+SUBMISSION OF LINK OF THE PIXEL ART MAKER:
+After building the pixel art maker given by Udacity, here is the link to the hosted webpage on github : 
+https://abdulazeeza.github.io
