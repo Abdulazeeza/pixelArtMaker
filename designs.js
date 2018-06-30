@@ -6,18 +6,17 @@ function makeGrid(colHeight,rowWidht,cellSize) {
       $('#colorPicker1').val('#ffffff');  //sets the default color of the colorPicker1 to white
 
        const table = $('#pixelCanvas');
-       const col = 0;
-       while(col < colHeight){ //this loop around to implement the columns
+       let col = 0;
+       while(col < colHeight){    //this loop around to implement the columns
         
             table.append('<tr></tr>');   //this  add the row to the table
    
-        for(const row = 0; row < rowWidht; let row = row++){  // this loop around to implement the rows
-           
+        for(let row = 0; row < rowWidht;row++){  // this loop around to implement the rows
            const icol = table.children().last();
            //adds the cells to the table and their events
             icol.append('<td draggable=\'true\' ondragover = \'this.style.background = $("#colorPicker").val()\' onclick= \'this.style.background = $("#colorPicker").val()\' ');
         }
-         let col = col++; //helps to add more columns to the table
+          col++; //helps to add more columns to the table
       }
 
       $('td').css('height',cellSize + 'px'); //create the cell height
@@ -31,7 +30,7 @@ function helpSubmit(){
         const valHeigth = $('#inputHeight').val();    //gets the height of table 
         const valWidth = $('#inputWeight').val();   //gets the width of table
         const cell = $('#inputSize').val();         //gets the size of each cells
-        makeGrid(valHeigth, valWidth,cell); //pass the height, width and size of cell as an argument to makeGrid function
+        makeGrid(valHeigth, valWidth, cell); //pass the height, width and size of cell as an argument to makeGrid function
      }
   }
 
@@ -39,9 +38,10 @@ function workSpace(){   // changes the backgrond color for the table whenever th
     return function(){
       $('table').css('background',$('#colorPicker1').val()); 
     }
+  }
      
 $(document).ready(function(){
   makeGrid(10,10,15); //calls the makeGrid and gives it a default value
-  $('#iSubmit').on('click',helpSubmit()); //reads the click event for the submit button
+  $('#iSubmit').on('click', helpSubmit()); //reads the click event for the submit button
   $('#colorPicker1').on('change',workSpace()); // reads for change of color on workspace and call workSpace()
 })
