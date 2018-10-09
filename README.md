@@ -1,6 +1,8 @@
 # Pixel Art Maker Project
 This project can design different types of design by the use of a table with different cells, each cell can be given any desired color in order to bring out the design expected.
+
 ## How to run
+ Press the download or clone button in the github repository 
 ## FEATURES ARE:
 1) Can get the width and height of the desire table
 2) Can also get the size of each cell in the tabe and implement it
