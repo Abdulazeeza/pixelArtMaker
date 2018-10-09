@@ -8,4 +8,4 @@ This project can design different types of design by the use of a table with dif
 4) Can change the color of the workspace of the table
 
 After building the pixel art maker given by Udacity, here is the link to the hosted webpage on github : 
-https://abdulazeeza.github.io
+ https://abdulazeeza.github.io/pixelArtMaker/
